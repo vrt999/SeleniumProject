@@ -3,7 +3,7 @@ package Practice;
 class Building  
 { 
 	static {
-		System.out.println("Parent static block"); 
+		System.out.println("Parent static block");
 	}
 	 {
 		System.out.println("non static parent block"); 

@@ -23,6 +23,7 @@ class Dog extends Animal
 	public void callme()
     {
         System.out.println("In callme of Dog");
+
     }
 
     public void callme2()
@@ -31,11 +32,13 @@ class Dog extends Animal
     }
 }
 
+
 public class TypeCastCheck 
 {
     public static void main (String [] args) 
     {
         Dog d = new Dog();      
+//        Cat a = d;// compile error
         Animal a = d;
         System.out.println("Below is D's method call");
         d.callme();

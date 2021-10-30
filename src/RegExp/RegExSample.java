@@ -3,6 +3,19 @@ package RegExp;
 import java.util.regex.Pattern;
 
 public class RegExSample {
+	
+	{
+		System.out.println("Non static block");
+	}
+	
+	static {
+		System.out.println("static block");
+	}
+	
+	
+	public RegExSample() {
+		System.out.println("constructor block");
+	}
 
 	public static void main(String[] args) {
 //		s.matches(Pattern.quote(testName)+"(_ex\\d+){0,1}");//_ex\d
@@ -13,9 +26,12 @@ public class RegExSample {
 //		s.macthes(Pattern.quote(testName)+"(\\[EX\\d+\\]){0,1}");
 //		testName.concat(String.format("[EX%04d]", exampleNums.size()+1));
 		
-		System.out.println("The formatted String: " + String.format("[EX%04d]", 99999));
-		System.out.println("The formatted String: " + String.format("_ex%04d", 9));
-		System.out.println("The formatted String: " + String.format("%s+%s", "Example",9));
+//		System.out.println("The formatted String: " + String.format("[EX%04d]", 99999));
+//		System.out.println("The formatted String: " + String.format("_ex%04d", 9));
+//		System.out.println("The formatted String: " + String.format("%s+%s", "Example",9));
+		
+		System.out.println("main block");		
+		RegExSample r = new RegExSample();
 
 	}
 
